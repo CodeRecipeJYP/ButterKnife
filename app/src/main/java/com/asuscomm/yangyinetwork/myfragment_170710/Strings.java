@@ -1,6 +1,10 @@
 package com.asuscomm.yangyinetwork.myfragment_170710;
 
+import android.content.Context;
+import android.content.res.Resources;
+
 import butterknife.BindString;
+import butterknife.ButterKnife;
 
 /**
  * Created by jaeyoung on 7/10/17.
@@ -14,6 +18,7 @@ public class Strings {
     public static Strings getInstance() {
         if (sInstance == null) {
             sInstance = new Strings();
+            new Strings_ViewBinding(sInstance, GlobalApplication.getInstance());
         }
         return sInstance;
     }

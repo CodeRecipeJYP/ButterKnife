@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements BlankFragment.OnF
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d(TAG, "onCreate: ");
 
         ButterKnife.bind(this);
         Log.d(TAG, "onCreate: helloMessage="+Strings.getInstance().helloMessage);
